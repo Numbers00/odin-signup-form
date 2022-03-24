@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <title>Signup Form</title>
+</head>
+<body>
+  <div class="entire-div container-fluid row">
+    <img class="left-img col-lg-4" src="./assets/tanks_unknown.jpg">
+    <div class="right-div col-lg-8 d-flex flex-column justify-content-around">
+      <div class="top-text">
+        <p class="fw-bold">
+          This is not a real service! Fill out the form below to be a beta
+          tester in Tanks Unknown, get a sneak peek of upcoming updates, and
+          much more!
+        </p>
+        <br>
+        <p class="fw-bold">
+          What are you waiting for!
+        </p>
+      </div>
+
+      <div id="signup-form" class="bg-light">
+        <form>
+          <div class="row mt-3 mb-3">
+            <div class="col-lg-4 ms-2 me-4">
+              <label for="firstName" class="form-label">FIRST NAME</label>
+              <input type="text" class="form-control" id="firstName">
+            </div>
+
+            <div class="col-lg-4 ms-2 me-4">
+              <label for="lastName" class="form-label">LAST NAME</label>
+              <input type="text" class="form-control" id="lastName">
+            </div>
+          </div>
+
+          <div class="row mb-3">
+            <div class="col-lg-4 ms-2 me-4">
+              <label for="email" class="form-label">EMAIL</label>
+              <input type="email" class="form-control" id="email">
+            </div>
+
+            <div class="col-lg-4 ms-2 me-4">
+              <label for="phoneNum" class="form-label">PHONE NUMBER</label>
+              <input type="text" class="form-control" id="phoneNum">
+            </div>
+          </div>
+
+          <div class="row mb-3">
+            <div class="col-lg-4 ms-2 me-4">
+              <label for="passwd" class="form-label">PASSWORD</label>
+              <input type="password" class="form-control" id="passwd">
+            </div>
+
+            <div class="col-lg-4 ms-2 me-4">
+              <label for="confirmPasswd" class="form-label">CONFIRM PASSWORD</label>
+              <input type="password" class="form-control" id="confirmPasswd">
+            </div>
+          </div>
+
+          <div class="ms-2 mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="updateCheck">
+            <label class="form-check-label" for="updateCheck">Do you want to receive exclusive updates, offers, and more from Tanks Unknown?</label>
+          </div>
+        </form>
+      </div>
+
+      <div class="bottom-text">
+        <button type="submit" class="btn green-600 d-block">Create Account</button>
+        <p>Already have an account? <a href="#" class="green-600">Log in</a></p>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
