@@ -1,0 +1,16 @@
+body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.signup-body {
+  background-color: #c3d1d8;
+}
+
+.signup-form {
+  background-color: #dee6ef;
+}
+
+.login-link {
+  color: #207868;
+}
