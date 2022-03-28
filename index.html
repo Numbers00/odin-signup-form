@@ -4,76 +4,82 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <title>Signup Form</title>
+  <title>Tanks Unknown Signup Form</title>
 </head>
 <body>
-  <div class="entire-div container-fluid row">
-    <img class="left-img col-lg-4" src="./assets/tanks_unknown.jpg">
-    <div class="right-div col-lg-8 d-flex flex-column justify-content-around">
-      <div class="top-text">
-        <p class="fw-bold">
-          This is not a real service! Fill out the form below to be a beta
-          tester in Tanks Unknown, get a sneak peek of upcoming updates, and
-          much more!
-        </p>
+  <div class="top-div m-0 p-0 container-fluid">
+    <img 
+      src="assets/tanks_unknown_main_menu.png"
+      class="m-0 p-0 container-fluid"
+    >
+  </div>
+  <div class="signup-body m-0 p-0 container-fluid row">
+    <img
+      src="assets/tanks_unknown_light_lava.png"
+      class="left-img col-lg-4"
+    >
+
+    <div class="right-div m-0 p-0 col-lg-8 container-fluid d-flex flex-column justify-content-center">
+      <div class="top-text-div text-left">
+        <p class="lead">This is not a real online service!</p>
         <br>
-        <p class="fw-bold">
-          What are you waiting for!
+        <p>
+          Sign up below to get a chance to be a beta tester in our upcoming 
+          game Tanks Unknown! Set in the laboratories of unknown nature, you 
+          and the other unknowing are thrust into battle royales with tanks of 
+          your own making. The battles are hard, the gunfire deafening, and 
+          there are even monsters lurking about! What’s more, there seems to be 
+          no permanent death, everyone gets to live to see another day, only to 
+          fight more. There seems to be no end to this, but it will up to you 
+          to find the truth, or resign to your fate.
         </p>
       </div>
 
-      <div id="signup-form" class="bg-light">
+      <div class="signup-form">
         <form>
-          <div class="row mt-3 mb-3">
-            <div class="col-lg-4 ms-2 me-4">
-              <label for="firstName" class="form-label">FIRST NAME</label>
-              <input type="text" class="form-control" id="firstName">
+          <div class="row mb-3">
+            <div>
+              <label for="firstName" class="form-label">First Name</label>
+              <input type="text" class="form-control col-lg-4" id="firstName">
             </div>
 
-            <div class="col-lg-4 ms-2 me-4">
-              <label for="lastName" class="form-label">LAST NAME</label>
-              <input type="text" class="form-control" id="lastName">
+            <div>
+              <label for="lastName" class="form-label">Last Name</label>
+              <input type="text" class="form-control col-lg-4" id="lastName">
             </div>
           </div>
 
           <div class="row mb-3">
-            <div class="col-lg-4 ms-2 me-4">
-              <label for="email" class="form-label">EMAIL</label>
-              <input type="email" class="form-control" id="email">
+            <div>
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control col-lg-4" id="email">
             </div>
 
-            <div class="col-lg-4 ms-2 me-4">
-              <label for="phoneNum" class="form-label">PHONE NUMBER</label>
-              <input type="text" class="form-control" id="phoneNum">
+            <div>
+              <label for="phoneNumber" class="form-label">Phone Number</label>
+              <input type="text" class="form-control col-lg-4" id="phoneNumber">
             </div>
           </div>
 
           <div class="row mb-3">
-            <div class="col-lg-4 ms-2 me-4">
-              <label for="passwd" class="form-label">PASSWORD</label>
-              <input type="password" class="form-control" id="passwd">
+            <div>
+              <label for="password" class="form-label">Password</label>
+              <input type="password" class="form-control col-lg-4" id="password">
             </div>
 
-            <div class="col-lg-4 ms-2 me-4">
-              <label for="confirmPasswd" class="form-label">CONFIRM PASSWORD</label>
-              <input type="password" class="form-control" id="confirmPasswd">
+            <div>
+              <label for="confirmPassword" class="form-label">Confirm Password</label>
+              <input type="password" class="form-control col-lg-4" id="confirmPassword">
             </div>
-          </div>
-
-          <div class="ms-2 mb-3 form-check">
-            <input type="checkbox" class="form-check-input" id="updateCheck">
-            <label class="form-check-label" for="updateCheck">Do you want to receive exclusive updates, offers, and more from Tanks Unknown?</label>
           </div>
         </form>
       </div>
 
-      <div class="bottom-text">
-        <button type="submit" class="create-acc-btn btn d-block">Create Account</button>
-        <p>Already have an account? <a href="#" class="login-link">Log in</a></p>
+      <div class="bottom-div">
+        <button type="button" class="btn btn-success">Sign Up</button>
+        <p>Already have an account? <a class="login-link">Log in</a></p>
       </div>
     </div>
   </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
