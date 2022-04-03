@@ -1,15 +1,40 @@
 body {
   overflow-x: hidden;
-  overflow-y: hidden;
+  width: 100vw;
+}
+
+.top-div {
+  height: 100vh;
+}
+
+.top-div img {
+  height: 100vh;
+  object-fit: cover;
 }
 
 .signup-body {
-  background-color: #c3d1d8;
+  height: 100vh;
+  background-color: #dee6ef; /* #594672; /* #c3d1d8; */
 }
 
-.signup-form {
-  background-color: #dee6ef;
+.left-img {
+  object-fit: cover;
 }
+
+/* .top-text-div {
+  color: white;
+} */
+
+.signup-form {
+  background-color: #feffff; /* #594672; /* #37b0ed; /* #dee6ef; /* #feffff; */
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  color: white;
+}
+
+/* .bottom-div {
+  color: white;
+} */
 
 .login-link {
   color: #207868;
