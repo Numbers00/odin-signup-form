@@ -1,0 +1,28 @@
+body {
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+.left-img {
+  height: 100vh;
+  object-fit: cover;
+}
+
+.signup-body {
+  height: 100vh;
+  background-color: #c2ced9; /* #594672; /* #c3d1d8; */
+}
+
+.signup-div {
+  background-color: #dfe7ec; /* #594672; /* #37b0ed; /* #dee6ef; /* #feffff; */
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.password-error {
+  color: red;
+}
+
+.login-link {
+  color: #207868;
+}
