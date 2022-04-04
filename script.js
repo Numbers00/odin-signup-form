@@ -1,14 +1,18 @@
 window.onload = () => {
-  document.addEventListener("keydown", handleKeydown);
+  doPasswordsMatch();
 }
 
-handleKeydown = (e) => {
-  console.log(e.keyCode);
-  switch (e.keyCode) {
-    case 38: // up arrow
-      window.scrollTo(document.querySelector('.signup-body').scrollHeight, 0);
-      break;
-    case 40: // down arrow
-      window.scrollTo(0, document.body.scrollHeight);
+doPasswordsMatch = () => {
+  let passwordInput = document.getElementById('password');
+  let confirmPasswordInput = document.getElementById('confirmPassword');
+  let passwordError = document.querySelector('.password-error');
+  if (passwordInput.value === confirmPasswordInput.value) {
+    passwordInput.style.border = '';
+    confirmPasswordInput.style.border = '';
+    passwordError.textContent = '';
+  } else {
+    passwordInput.style.border = '1px solid red';
+    confirmPasswordInput.style.border = '1px solid red';
+    passwordError.textContent = '* Passwords do not match';
   }
 }

@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="style.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script type="text/javascript" src="script.js" defer></script>
   <title>Tanks Unknown Signup Form</title>
 </head>
 <body>
@@ -31,54 +32,54 @@
         </p>
       </div>
 
-      <div class="signup-form">
-        <form class="ms-4 my-5">
+      <div class="signup-div">
+        <form class="ms-4 my-5" id="signup-form">
           <div class="row mb-3">
             <div class="col-lg-4 mr-3">
               <label for="firstName" class="form-label">First Name</label>
-              <input type="text" class="form-control" id="firstName">
+              <input type="text" class="form-control" id="firstName" value="Thor" required>
             </div>
 
             <div class="col-lg-4 mr-3">
               <label for="lastName" class="form-label">Last Name</label>
-              <input type="text" class="form-control" id="lastName">
+              <input type="text" class="form-control" id="lastName" value="Odinson" required autofocus>
             </div>
           </div>
 
           <div class="row mb-3">
             <div class="col-lg-4 mr-3">
               <label for="email" class="form-label">Email</label>
-              <input type="email" class="form-control" id="email">
+              <input type="email" class="form-control" id="email" required>
             </div>
 
             <div class="col-lg-4 mr-3">
               <label for="phoneNumber" class="form-label">Phone Number</label>
-              <input type="text" class="form-control" id="phoneNumber">
+              <input type="text" class="form-control" id="phoneNumber" required>
             </div>
           </div>
 
           <div class="row mb-3">
             <div class="col-lg-4 mr-3">
               <label for="password" class="form-label">Password</label>
-              <input type="password" class="form-control" id="password">
+              <input type="password" class="form-control" id="password" onkeyup="doPasswordsMatch()" required>
+              <span class="password-error"></span>
             </div>
 
             <div class="col-lg-4 mr-3">
               <label for="confirmPassword" class="form-label">Confirm Password</label>
-              <input type="password" class="form-control" id="confirmPassword">
+              <input type="password" class="form-control" id="confirmPassword" value=" " onkeyup="doPasswordsMatch()" required>
             </div>
           </div>
         </form>
       </div>
 
       <div class="bottom-div">
-        <button type="button" class="btn btn-success ms-4 mt-4 mb-2 col-lg-4">Sign Up</button>
+        <button type="submit" form="signup-form" class="btn btn-success ms-4 mt-4 mb-2 col-lg-4">Sign Up</button>
         <p class="ms-4">Already have an account? <a class="login-link fw-bold">Log in</a></p>
       </div>
     </div>
   </div>
 
-  <script type="text/javascript" src="script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
